@@ -1,0 +1,244 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//NO GAMES//OPERATIONS OS//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:NO GAMES — OPERATIONS
+X-WR-TIMEZONE:Europe/London
+BEGIN:VTIMEZONE
+TZID:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:nog-ops-mon-command@nogames-os
+DTSTAMP:20260726T200000Z
+SUMMARY:[NOG][OPS][ACTIVE] Command + dependency review
+DTSTART;TZID=Europe/London:20260727T100000
+DTEND;TZID=Europe/London:20260727T113000
+RRULE:FREQ=WEEKLY;BYDAY=MO
+EXDATE;TZID=Europe/London:20260907T100000
+EXDATE;TZID=Europe/London:20260914T100000
+DESCRIPTION:Only job: confirm which GATEs flip to DONE and which
+  downstream events unblock.\nRules: max two priority blocks per day.
+  \n30-min buffer follows this block.\nDates are never silently
+  compressed — moves happen here\, by explicit decision\, or not at all.
+END:VEVENT
+BEGIN:VEVENT
+UID:nog-design-tue@nogames-os
+DTSTAMP:20260726T200000Z
+SUMMARY:[NOG][DESIGN][ACTIVE] Design deliverable block
+DTSTART;TZID=Europe/London:20260728T100000
+DTEND;TZID=Europe/London:20260728T113000
+RRULE:FREQ=WEEKLY;BYDAY=TU
+EXDATE;TZID=Europe/London:20260908T100000
+EXDATE;TZID=Europe/London:20260915T100000
+DESCRIPTION:ONLY TWO ACTIVE OUTPUTS — everything else HOLD:\n
+ 1. 1920x2400 px 20-mark master logo sheet\n2. 1920x2400 px August
+  garment placement/trim/colour/technical specification sheet\n
+ No new creative work may enter this block without a Monday review
+  decision.\n30-min buffer follows.
+END:VEVENT
+BEGIN:VEVENT
+UID:nog-compliance-wed@nogames-os
+DTSTAMP:20260726T200000Z
+SUMMARY:[NOG][COMPLIANCE][ACTIVE] Compliance / evidence review
+DTSTART;TZID=Europe/London:20260729T100000
+DTEND;TZID=Europe/London:20260729T113000
+RRULE:FREQ=WEEKLY;BYDAY=WE
+EXDATE;TZID=Europe/London:20260909T100000
+DESCRIPTION:Work the gap table (pack doc 17): upgrade labels\, file
+  evidence to the 12-folder tree\, update the evidence index.\n
+ Supplier due-diligence + REACH/SMETA-SEDEX/GS1 doc collection lives
+  here once suppliers are approved for contact.\n30-min buffer follows.
+END:VEVENT
+BEGIN:VEVENT
+UID:nog-web-thu@nogames-os
+DTSTAMP:20260726T200000Z
+SUMMARY:[NOG][WEB][ACTIVE] Website readiness block
+DTSTART;TZID=Europe/London:20260730T100000
+DTEND;TZID=Europe/London:20260730T113000
+RRULE:FREQ=WEEKLY;BYDAY=TH
+EXDATE;TZID=Europe/London:20260827T100000
+EXDATE;TZID=Europe/London:20260910T100000
+DESCRIPTION:Store readiness per pack doc 05: legal pages\, checkout
+  compliance\, test-purchase script.\nStore does NOT go live without
+  an APPROVE decision event.\nNote: 27 Aug occurrence removed — bail
+  return day.\n30-min buffer follows.
+END:VEVENT
+BEGIN:VEVENT
+UID:nog-finance-fri@nogames-os
+DTSTAMP:20260726T200000Z
+SUMMARY:[NOG][FINANCE][ACTIVE] Finance block
+DTSTART;TZID=Europe/London:20260731T100000
+DTEND;TZID=Europe/London:20260731T113000
+RRULE:FREQ=WEEKLY;BYDAY=FR
+EXDATE;TZID=Europe/London:20260904T100000
+EXDATE;TZID=Europe/London:20260911T100000
+DESCRIPTION:Bootstrap/pre-sale model is PRIMARY (Startup Loan
+  deferred — underwriting risk under UC/LCWRA + housing instability).
+  \nBookkeeping\, forecasts\, gift/giveaway cost log.\n30-min buffer
+  follows.
+END:VEVENT
+BEGIN:VEVENT
+UID:nog-ai-state-fri@nogames-os
+DTSTAMP:20260726T200000Z
+SUMMARY:[NOG][AI][ACTIVE] Weekly State Summary
+DTSTART;TZID=Europe/London:20260731T140000
+DTEND;TZID=Europe/London:20260731T150000
+RRULE:FREQ=WEEKLY;BYDAY=FR
+EXDATE;TZID=Europe/London:20260904T140000
+EXDATE;TZID=Europe/London:20260911T140000
+DESCRIPTION:Paste the completed 11-field block into this event each
+  Friday. This is the single AI reference state.\n\n1. ACTIVE OUTPUTS:
+  \n2. GATE STATUS (G1-G5):\n3. BLOCKERS:\n4. EVIDENCE IDs (NoG-###):
+  \n5. DECISIONS REQUIRED:\n6. REVERSIBLE AI TASKS:\n7. NEXT ACTION:
+  \n8. DEADLINES (14-day view):\n9. OWNER:\n10. ACCEPTANCE TEST:
+  \n11. STATUS VERDICT (PASS / PASS-WITH-GAPS / FAIL):
+END:VEVENT
+BEGIN:VEVENT
+UID:nog-conflict-sun@nogames-os
+DTSTAMP:20260726T200000Z
+SUMMARY:[NOG][OPS][ACTIVE] Fourteen-day conflict check
+DTSTART;TZID=Europe/London:20260802T180000
+DTEND;TZID=Europe/London:20260802T184500
+RRULE:FREQ=WEEKLY;BYDAY=SU
+EXDATE;TZID=Europe/London:20260906T180000
+EXDATE;TZID=Europe/London:20260913T180000
+DESCRIPTION:Scan the next 14 days against HOME/LEGAL anchors (bail
+  return 27 Aug\, tenancy end 4 Sep\, protected period to mid-Sep).
+  \nAny NOG event colliding with a HOME/LEGAL item is moved at Monday
+  review — legal clocks always win.
+END:VEVENT
+BEGIN:VEVENT
+UID:nog-gate1@nogames-os
+DTSTAMP:20260726T200000Z
+SUMMARY:[NOG][GATE1][ACTIVE] Welfare/benefits written advice + DWP disclosure
+DTSTART;VALUE=DATE:20260727
+DTEND;VALUE=DATE:20260729
+DESCRIPTION:Gate 1 of 5 — blocks everything downstream.\nWritten
+  LCWRA/UC advice on directorship + self-employment (Citizens Advice /
+  welfare-rights) and documented DWP disclosure BEFORE any Companies
+  House filing.\nFlip to DONE only when the advice note is filed as
+  evidence (NoG-###).
+END:VEVENT
+BEGIN:VEVENT
+UID:nog-gate2@nogames-os
+DTSTAMP:20260726T200000Z
+SUMMARY:[NOG][GATE2][ACTIVE] Commercial registered office live
+DTSTART;VALUE=DATE:20260728
+DTEND;VALUE=DATE:20260730
+DESCRIPTION:Gate 2 of 5.\nCommercial registered-office/mailbox in
+  England/Wales — physical address\, not a PO Box\, not home (tenancy
+  ends 4 Sep).\nFlip to DONE when the signed service contract is filed.
+END:VEVENT
+BEGIN:VEVENT
+UID:nog-gate3@nogames-os
+DTSTAMP:20260726T200000Z
+SUMMARY:[NOG][GATE3][BLOCKED] Business structure decision (Ltd vs sole trader)
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260801
+DESCRIPTION:Gate 3 of 5 — BLOCKED until Gate 1 is DONE.\nDecision
+  taken on the written tax + benefits advice. Target date only —
+  moves by explicit Monday-review decision\, never silently.
+END:VEVENT
+BEGIN:VEVENT
+UID:nog-approve-incorporation@nogames-os
+DTSTAMP:20260726T200000Z
+SUMMARY:[NOG][APPROVE][BLOCKED] 48h decision: incorporation filing
+DTSTART;VALUE=DATE:20260808
+DTEND;VALUE=DATE:20260809
+DESCRIPTION:48-hour APPROVE event — no same-day decide-and-act on
+  irreversible steps.\nConfirm Gates 1-3 DONE\, filing pack complete
+  (name\, SIC\, director ID\, RO address)\, no calendar conflict.
+  \nOnly a YES here unblocks Gate 4.
+END:VEVENT
+BEGIN:VEVENT
+UID:nog-gate4@nogames-os
+DTSTAMP:20260726T200000Z
+SUMMARY:[NOG][GATE4][BLOCKED] Incorporation filing (TARGET)
+DTSTART;VALUE=DATE:20260810
+DTEND;VALUE=DATE:20260811
+DESCRIPTION:Gate 4 of 5 — BLOCKED until Gates 1-3 DONE + APPROVE
+  event passed.\nTarget date only — provisional\, moves by explicit
+  decision. Never compressed silently.
+END:VEVENT
+BEGIN:VEVENT
+UID:nog-approve-banking@nogames-os
+DTSTAMP:20260726T200000Z
+SUMMARY:[NOG][APPROVE][BLOCKED] 48h decision: bank application
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260816
+DESCRIPTION:48-hour APPROVE event.\nConfirm Gate 4 DONE\,
+  incorporation certificate in hand\, provider shortlist scored\,
+  international trade declared honestly.
+END:VEVENT
+BEGIN:VEVENT
+UID:nog-gate5@nogames-os
+DTSTAMP:20260726T200000Z
+SUMMARY:[NOG][GATE5][BLOCKED] Business banking application (TARGET)
+DTSTART;VALUE=DATE:20260817
+DTEND;VALUE=DATE:20260818
+DESCRIPTION:Gate 5 of 5 — BLOCKED until Gate 4 DONE + APPROVE passed.
+  \nTarget date only.
+END:VEVENT
+BEGIN:VEVENT
+UID:nog-approve-trademark@nogames-os
+DTSTAMP:20260726T200000Z
+SUMMARY:[NOG][APPROVE][BLOCKED] 48h decision: trademark filing
+DTSTART;VALUE=DATE:20260816
+DTEND;VALUE=DATE:20260817
+DESCRIPTION:48-hour APPROVE event.\nConfirm IPO conflict search
+  recorded\, classes chosen\, Gate 4 DONE (company owns the mark).
+END:VEVENT
+BEGIN:VEVENT
+UID:nog-ip-trademark@nogames-os
+DTSTAMP:20260726T200000Z
+SUMMARY:[NOG][IP][BLOCKED] "No Games" trademark filing (TARGET)
+DTSTART;VALUE=DATE:20260818
+DTEND;VALUE=DATE:20260819
+DESCRIPTION:BLOCKED until Gate 4 DONE + APPROVE passed.\nWord + logo
+  marks\, classes per pack doc 02 §4. Target date only.
+END:VEVENT
+BEGIN:VEVENT
+UID:nog-legal-bail@nogames-os
+DTSTAMP:20260726T200000Z
+SUMMARY:[HOME/LEGAL] Bail return — all NOG work paused today
+DTSTART;VALUE=DATE:20260827
+DTEND;VALUE=DATE:20260828
+DESCRIPTION:Constraint banner. Legal clocks always outrank business
+  admin. Thursday NOG block removed this day.
+END:VEVENT
+BEGIN:VEVENT
+UID:nog-legal-tenancy@nogames-os
+DTSTAMP:20260726T200000Z
+SUMMARY:[HOME/LEGAL] Tenancy ends
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260905
+DESCRIPTION:Constraint banner. Registered office is commercial from
+  day one — company address is unaffected by this move.
+END:VEVENT
+BEGIN:VEVENT
+UID:nog-legal-protected@nogames-os
+DTSTAMP:20260726T200000Z
+SUMMARY:[HOME/LEGAL][PROTECTED] Legal/tribunal protected period — NOG schedule paused
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260916
+DESCRIPTION:Constraint banner\, conservative window through
+  mid-September.\nAll recurring NOG blocks are already excluded in
+  this window (EXDATEs baked in). Ops resume Wed 16 Sep.\nAny change
+  to this window is an explicit Monday-review decision.
+END:VEVENT
+END:VCALENDAR
