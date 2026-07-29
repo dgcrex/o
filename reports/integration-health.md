@@ -35,3 +35,4 @@ Updated weekly by the Monday 08:11 Integration Health Audit; regressions trigger
 ## Delta log
 
 - **2026-07-03**: baseline established. No prior snapshot to diff.
+- **2026-07-29**: no full re-sweep performed (26 days stale, overdue for the weekly cadence this report claims). Partial spot-check this run surfaced a **regression**: Linear, Replit, and Superhuman Mail — all 🟢/🟡 functioning at baseline, and Linear specifically used successfully as recently as 2026-07-28 (PR #13) — now require re-authentication before any of their MCP tools can be used. Replit's loss is significant: it was the connector for Capital Flywheel Agent, "the most active real project in the workspace." A full 15-system probe is recommended to confirm scope and rule out further regressions.
